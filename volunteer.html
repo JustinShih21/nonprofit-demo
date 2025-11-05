@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Volunteer | Without Limits Foundation</title>
+    <meta name="description" content="Without Limits Foundation — inclusive dance & sports for neurodiverse communities." />
+    <meta property="og:title" content="Volunteer | Without Limits Foundation" />
+    <meta property="og:description" content="Without Limits Foundation — inclusive dance & sports for neurodiverse communities." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/assets/og-image.png" />
+    <link rel="icon" href="/assets/favicon.ico" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      :root {
+        --brand-green: #22c55e;   /* green-500 */
+        --brand-blue:  #3b82f6;   /* blue-500  */
+        --brand-purple:#8b5cf6;   /* violet-500*/
+        --brand-teal:  #14b8a6;   /* teal-500  */
+      }
+      .brand-gradient {
+        background: linear-gradient(135deg, var(--brand-blue), var(--brand-teal), var(--brand-purple));
+      }
+    </style>
+  </head>
+  <body class="min-h-screen bg-gray-50 text-gray-900">
+
+<header class="sticky top-0 z-50 bg-white/80 backdrop-blur border-b">
+  <div class="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
+    <a href="/index.html" class="font-bold tracking-tight text-lg">Without<span class="text-blue-600">Limits</span></a>
+    <nav class="hidden md:flex items-center gap-2 text-sm">
+      <a href="/about.html" class="px-3 py-1.5 rounded-xl hover:bg-gray-100">About</a>
+      <a href="/gallery.html" class="px-3 py-1.5 rounded-xl hover:bg-gray-100">Gallery</a>
+      <a href="/programs.html" class="px-3 py-1.5 rounded-xl hover:bg-gray-100">Programs</a>
+      <a href="/impact.html" class="px-3 py-1.5 rounded-xl hover:bg-gray-100">Impact</a>
+      <a href="/blog.html" class="px-3 py-1.5 rounded-xl hover:bg-gray-100">Blog</a>
+      <a href="/events.html" class="px-3 py-1.5 rounded-xl hover:bg-gray-100">Events</a>
+      <a href="/sponsorship.html" class="px-3 py-1.5 rounded-xl hover:bg-gray-100">Sponsorship</a>
+      <a href="/press.html" class="px-3 py-1.5 rounded-xl hover:bg-gray-100">Press/Media</a>
+      <a href="/faq.html" class="px-3 py-1.5 rounded-xl hover:bg-gray-100">FAQ</a>
+      <a href="/contact.html" class="px-3 py-1.5 rounded-xl hover:bg-gray-100">Contact</a>
+      <a href="/donate.html" class="ml-2 bg-black text-white px-3 py-1.5 rounded-xl">Donate</a>
+    </nav>
+    <button id="menuBtn" class="md:hidden inline-flex items-center rounded-lg border px-3 py-1.5">Menu</button>
+  </div>
+  <div id="mobileMenu" class="md:hidden hidden border-t bg-white">
+    <div class="mx-auto max-w-6xl px-4 py-2 grid gap-2 text-sm">
+      <a href="/about.html" class="py-2">About</a>
+      <a href="/gallery.html" class="py-2">Gallery</a>
+      <a href="/programs.html" class="py-2">Programs</a>
+      <a href="/impact.html" class="py-2">Impact</a>
+      <a href="/blog.html" class="py-2">Blog</a>
+      <a href="/events.html" class="py-2">Events</a>
+      <a href="/sponsorship.html" class="py-2">Sponsorship</a>
+      <a href="/press.html" class="py-2">Press/Media</a>
+      <a href="/faq.html" class="py-2">FAQ</a>
+      <a href="/contact.html" class="py-2">Contact</a>
+      <a href="/donate.html" class="py-2">Donate</a>
+    </div>
+  </div>
+</header>
+
+<section class="mx-auto max-w-6xl px-4 py-16">
+  <h1 class="text-3xl font-bold">Volunteer</h1>
+  <p class="mt-4 text-gray-700">Join a movement that changes lives—yours included. Open to middle school, high school, and college students.</p>
+  <div class="mt-6 grid md:grid-cols-2 gap-6">
+    <div class="rounded-2xl border bg-white p-6">
+      <h2 class="text-xl font-semibold">Opportunities</h2>
+      <ul class="list-disc ml-6 mt-3 text-sm text-gray-700">
+        <li>Coaching and activity support</li>
+        <li>Peer buddy support</li>
+      </ul>
+    </div>
+    <div class="rounded-2xl border bg-white p-6">
+      <h2 class="text-xl font-semibold">How It Works</h2>
+      <ul class="list-disc ml-6 mt-3 text-sm text-gray-700">
+        <li>Fill out the volunteer interest form</li>
+        <li>Sign in at each meeting to track service hours</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<footer class="mt-20 border-t">
+  <div class="mx-auto max-w-6xl px-4 py-10 text-sm text-gray-600 flex flex-col md:flex-row items-center justify-between gap-4">
+    <p>© <span id="year"></span> Without Limits Foundation. All rights reserved.</p>
+    <div class="flex items-center gap-4">
+      <a href="https://instagram.com/withoutlimitsfoundation" class="hover:underline">Instagram</a>
+      <a href="mailto:withoutlimitsnpo@gmail.com" class="hover:underline">Email</a>
+      <a href="/press.html" class="hover:underline">Media Kit</a>
+    </div>
+  </div>
+</footer>
+<script>
+  const menuBtn = document.getElementById('menuBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+  menuBtn?.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body></html>
